@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest{
 		driver.get("http://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.id("email")).sendKeys("elena.forrest@gmail.com");
-		driver.findElement(By.id("pass")).sendKeys("Bruce2003$");
+		driver.findElement(By.id("pass")).sendKeys("Bruce");
 		driver.findElement(By.id("u_0_n")).click();
 		List<WebElement> list = driver.findElements(By.tagName("a"));
 		for(WebElement link : list){
@@ -38,10 +38,12 @@ public class LoginTest extends BaseTest{
 		List<WebElement> buttons = driver.findElements(By.cssSelector("button"));
 		for(WebElement button : buttons){
 		System.out.println(button.getText());
-		System.out.println("HELLO ELENA");
+		System.out.println("HELLO");
 		driver.findElement(By.id("userNavigationLabel")).click();
 		driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
 		
 	}
 
 }
+}
+
