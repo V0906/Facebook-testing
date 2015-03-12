@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16804" started-at="2015-03-12T01:47:03Z" finished-at="2015-03-12T01:47:20Z">
+  <suite name="Default suite" duration-ms="17755" started-at="2015-03-12T08:45:13Z" finished-at="2015-03-12T08:45:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16804" started-at="2015-03-12T01:47:03Z" finished-at="2015-03-12T01:47:20Z">
+    <test name="Default test" duration-ms="17755" started-at="2015-03-12T08:45:13Z" finished-at="2015-03-12T08:45:31Z">
       <class name="com.elena.pages.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elena.pages.LoginTest@64633e5e]" name="setUp" is-config="true" duration-ms="2623" started-at="2015-03-11T21:47:00Z" finished-at="2015-03-11T21:47:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elena.pages.LoginTest@d576e70]" name="setUp" is-config="true" duration-ms="3065" started-at="2015-03-12T04:45:10Z" finished-at="2015-03-12T04:45:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.elena.pages.LoginTest@64633e5e]" name="login" duration-ms="16792" started-at="2015-03-11T21:47:03Z" finished-at="2015-03-11T21:47:20Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.elena.pages.LoginTest@d576e70]" name="login" duration-ms="17742" started-at="2015-03-12T04:45:13Z" finished-at="2015-03-12T04:45:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elena.pages.LoginTest@64633e5e]" name="tearDown" is-config="true" duration-ms="777" started-at="2015-03-11T21:47:20Z" finished-at="2015-03-11T21:47:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elena.pages.LoginTest@d576e70]" name="tearDown" is-config="true" duration-ms="810" started-at="2015-03-12T04:45:31Z" finished-at="2015-03-12T04:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,27 +4,19 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+public class LoginTest extends BaseTest{
 	
-protected WebDriver driver;
-	
-	@BeforeSuite(alwaysRun = true)
-	public void setUp(){
-		driver = new FirefoxDriver();
-		}
-	@AfterSuite(alwaysRun = true)
-	public void tearDown(){
-		driver.quit();
-		}
-	
-	
+	public LoginTest() {
+		super(driver);
+	}
+		
 	@Test
 	public void login(){
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
