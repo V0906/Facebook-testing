@@ -1,9 +1,11 @@
 package com.elena.pages;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -32,6 +34,13 @@ protected WebDriver driver;
 		driver.findElement(By.id("pass")).sendKeys("Bruce2003$");
 		driver.findElement(By.id("u_0_n")).click();
 		driver.findElement(By.id("userNavigationLabel")).click();
+		//driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
+		//WebElement menuLogout = driver.findElement(By.cssSelector(""));
+		List<WebElement> list = driver.findElements(By.tagName("a"));
+		for(WebElement link : list){
+			System.out.println(link.getText());
+			//System.out.println(link.getAttribute(""));
+		}
 		driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
 		/*try {
 			Thread.sleep(3000);
