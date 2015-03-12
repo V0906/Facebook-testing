@@ -20,7 +20,7 @@ public class LoginTest extends BaseTest{
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		driver.get("http://www.facebook.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.id("email")).sendKeys("elena.forrest@gmail.com");
+		driver.findElement(By.id("email")).sendKeys("nekto@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("Bruce");
 		driver.findElement(By.id("u_0_n")).click();
 		List<WebElement> list = driver.findElements(By.tagName("a"));
