@@ -26,12 +26,9 @@ public class LoginTest extends BaseTest{
 		driver.findElement(By.id("pass")).sendKeys("Bruce2003$");
 		driver.findElement(By.id("u_0_n")).click();
 		driver.findElement(By.id("userNavigationLabel")).click();
-		//driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
-		//WebElement menuLogout = driver.findElement(By.cssSelector(""));
 		List<WebElement> list = driver.findElements(By.tagName("a"));
 		for(WebElement link : list){
 			System.out.println(link.getText());
-			//System.out.println(link.getAttribute(""));
 		}
 		driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
 		/*try {
