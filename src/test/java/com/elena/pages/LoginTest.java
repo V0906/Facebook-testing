@@ -30,7 +30,9 @@ protected WebDriver driver;
 		driver.manage().window().maximize();
 		driver.findElement(By.id("email")).sendKeys("elena.forrest@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("Bruce2003$");
-		driver.findElement(By.id("u_0_n")).click();;
+		driver.findElement(By.id("u_0_n")).click();
+		driver.findElement(By.id("userNavigationLabel")).click();
+		driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
 		/*try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
