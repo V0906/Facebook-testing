@@ -38,6 +38,7 @@ public class LoginTest extends BaseTest{
 		List<WebElement> buttons = driver.findElements(By.cssSelector("button"));
 		for(WebElement button : buttons){
 		System.out.println(button.getText());
+		System.out.println("HELLO ELENA");
 		driver.findElement(By.id("userNavigationLabel")).click();
 		driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
 		
