@@ -20,7 +20,7 @@ public class LoginTest extends BaseTest{
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		driver.get("http://www.facebook.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.id("email")).sendKeys("elena.forrest@gmail.com");
+		driver.findElement(By.id("email")).sendKeys("nekto@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("Bruce");
 		driver.findElement(By.id("u_0_n")).click();
 		List<WebElement> list = driver.findElements(By.tagName("a"));
@@ -41,6 +41,10 @@ public class LoginTest extends BaseTest{
 			System.out.println(button.getText());
 		}
 		System.out.println("HELLO");
+		int i=10;
+		for (i=0; i<10; i++){
+			System.out.println(i);
+		}
 		driver.findElement(By.id("userNavigationLabel")).click();
 		driver.findElement(By.cssSelector("input.uiLinkButtonInput")).click();
 		
